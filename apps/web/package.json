@@ -16,7 +16,7 @@
     "@repo/internationalization": "workspace:*",
     "@repo/next-config": "workspace:*",
     "@repo/seo": "workspace:*",
-    "@sentry/nextjs": "^9.22.0",
+    "@sentry/nextjs": "^9.24.0",
     "@t3-oss/env-nextjs": "^0.13.4",
     "date-fns": "^4.1.0",
     "fumadocs-core": "^15.4.0",
