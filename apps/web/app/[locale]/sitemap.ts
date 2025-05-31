@@ -1,7 +1,29 @@
 import fs from 'node:fs';
 import { env } from '@/env';
-import { blog, legal } from '@repo/cms';
 import type { MetadataRoute } from 'next';
+
+// Dummy blog and legal modules for sitemap generation
+const blog = {
+  getPosts: () => {
+    // This would normally fetch from a CMS or database
+    return [
+      { _slug: 'getting-started' },
+      { _slug: 'best-practices' },
+      { _slug: 'advanced-techniques' },
+    ];
+  },
+};
+
+const legal = {
+  getPosts: () => {
+    // This would normally fetch from a CMS or database
+    return [
+      { _slug: 'terms-of-service' },
+      { _slug: 'privacy-policy' },
+      { _slug: 'cookie-policy' },
+    ];
+  },
+};
 
 const appFolders = fs.readdirSync('app', { withFileTypes: true });
 const pages = appFolders
