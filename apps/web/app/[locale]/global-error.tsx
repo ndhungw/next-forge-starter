@@ -2,7 +2,6 @@
 
 import { Button } from '@repo/design-system/components/ui/button';
 import { fonts } from '@repo/design-system/lib/fonts';
-import { captureException } from '@sentry/nextjs';
 import type NextError from 'next/error';
 import { useEffect } from 'react';
 
@@ -13,7 +12,9 @@ type GlobalErrorProperties = {
 
 const GlobalError = ({ error, reset }: GlobalErrorProperties) => {
   useEffect(() => {
-    captureException(error);
+    // biome-ignore lint/suspicious/noConsoleLog: <explanation>
+    // biome-ignore lint/suspicious/noConsole: <explanation>
+    console.log(error);
   }, [error]);
 
   return (

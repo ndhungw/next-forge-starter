@@ -15,23 +15,23 @@
     "@repo/internationalization": "workspace:*",
     "@repo/next-config": "workspace:*",
     "@repo/seo": "workspace:*",
-    "@t3-oss/env-nextjs": "^0.13.4",
+    "@t3-oss/env-nextjs": "^0.13.6",
     "date-fns": "^4.1.0",
-    "import-in-the-middle": "^1.13.2",
+    "import-in-the-middle": "^1.14.0",
     "lucide-react": "^0.511.0",
-    "next": "15.3.2",
+    "next": "15.3.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "require-in-the-middle": "^7.5.2",
     "sharp": "^0.34.2",
-    "zod": "^3.25.28"
+    "zod": "^3.25.49"
   },
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
-    "@types/node": "22.15.21",
-    "@types/react": "19.1.5",
+    "@types/node": "22.15.29",
+    "@types/react": "19.1.6",
     "@types/react-dom": "19.1.5",
-    "tailwindcss": "^4.1.7",
+    "tailwindcss": "^4.1.8",
     "typescript": "^5.8.3"
   }
 }
