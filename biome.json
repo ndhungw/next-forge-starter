@@ -8,5 +8,15 @@
       "packages/design-system/hooks/**",
       "apps/docs/**/*.json"
     ]
+  },
+  "linter": {
+    "rules": {
+      "suspicious": {
+        "noExplicitAny": "off"
+      },
+      "nursery": {
+        "noDocumentCookie": "off"
+      }
+    }
   }
 }

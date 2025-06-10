@@ -1,0 +1,37 @@
+{
+  "name": "@repo/http-service",
+  "private": true,
+  "version": "0.0.0",
+  "description": "A powerful, type-safe HTTP client library for Next.js applications with caching, authentication, retries, and CSRF protection",
+  "keywords": [
+    "http",
+    "client",
+    "nextjs",
+    "typescript",
+    "fetch",
+    "api",
+    "caching",
+    "authentication",
+    "retries",
+    "csrf"
+  ],
+  "scripts": {
+    "clean": "git clean -xdf .cache .turbo dist node_modules",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false",
+    "test": "vitest --watch=false",
+    "test:run": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:watch": "vitest --watch",
+    "benchmark": "node benchmarks/performance.js",
+    "docs": "echo 'See README.md, BEGINNER_GUIDE.md, QUICK_REFERENCE.md, and EXAMPLES.md for documentation'"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^2.0.0",
+    "jsdom": "^25.0.0",
+    "next": "15.3.3",
+    "vitest": "^2.0.0"
+  },
+  "peerDependencies": {
+    "next": "15.3.3"
+  }
+}
